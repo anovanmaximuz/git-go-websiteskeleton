@@ -6,9 +6,9 @@ import (
     "net/http"
     "time"
 
-    "./app/common"
-    "./app/home"
-    "./app/user"
+    "github.com/anovanmaximuz/git-go-websiteskeleton/app/common"
+    "github.com/anovanmaximuz/git-go-websiteskeleton/app/home"
+    "github.com/anovanmaximuz/git-go-websiteskeleton/app/user"
 
     "github.com/golang/glog"
     "github.com/gorilla/mux"
@@ -35,6 +35,8 @@ func main() {
     if err != nil {
         fmt.Println(err)
     }
+
+   fmt.Println("Running server at port 8080")
 }
 
 func httpInterceptor(router http.Handler) http.Handler {
