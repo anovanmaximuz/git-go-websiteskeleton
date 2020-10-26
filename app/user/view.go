@@ -4,7 +4,7 @@ import (
     "net/http"
     "html/template"
 
-    "git-go-websiteskeleton/app/common"
+    "../../app/common"
 
     "github.com/gorilla/mux"
 )
